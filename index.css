@@ -221,10 +221,6 @@
             margin-bottom: 8px;
             text-align: center;
             color: aliceblue;
-            transition-duration: 5s;
-        }
-        .card-content h3:hover{
-            zoom: 110%;
         }
         .card-content h2{
             font-size: 15px;
@@ -249,4 +245,7 @@
             align-items: center;
             flex-wrap: wrap;
             margin-top: 16px;
+            font: 1em sans-serif;
+            font-weight: bold;
+            text-decoration-line: underline;
         }
