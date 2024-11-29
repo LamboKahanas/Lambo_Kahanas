@@ -17,10 +17,26 @@
         .sky-background {
             background: linear-gradient(to top, #87cefa, #1e90ff); /* Light sky blue to deep blue */
             position: relative;
-            height: 30vh;
+            height: 40vh;
             overflow: hidden;
         }
-
+        .abot{
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .abot p{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: justify;
+            font-size: large;
+        }
+        .abot h2{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: justify;
+        }
         .clouds {
             position: absolute;
             top: 10%;

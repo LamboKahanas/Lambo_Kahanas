@@ -17,7 +17,7 @@ body {
 .sky-background {
     background: linear-gradient(to top, #87cefa, #1e90ff); /* Light sky blue to deep blue */
     position: relative;
-    height: 50vh;
+    height: 40vh;
     overflow: hidden;
 }
 
