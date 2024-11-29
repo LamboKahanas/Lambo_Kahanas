@@ -8,8 +8,9 @@
         h1{
             text-align: center;
         }
-        p{
+        .ap p{
             text-align: justify;
+            font-size: large;
             padding-left: 15px;
             padding-top: 15px;
             padding-left: 15px;
