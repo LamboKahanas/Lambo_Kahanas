@@ -17,7 +17,7 @@
     .sky-background {
         background: linear-gradient(to top, #87cefa, #1e90ff); /* Light sky blue to deep blue */
         position: relative;
-        height: 50vh;
+        height: 30vh;
         overflow: hidden;
     }
 
@@ -204,7 +204,7 @@
       }
       
      
-      input[type=submit] {
+      .btn {
         background-color: #1e90ff;
         color: white;
         padding: 12px 20px;
