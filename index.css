@@ -1,75 +1,89 @@
-/* General Styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-h1, h2, p {
-    margin: 0;
-}
+        /* Reset for margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-a {
-    text-decoration: none;
-    color: white;
-}
+        /* Sky Background with Cloud Animation */
+        .sky-background {
+            background: linear-gradient(to top, #87cefa, #1e90ff); /* Light sky blue to deep blue */
+            position: relative;
+            height: 50vh;
+            overflow: hidden;
+        }
 
-/* Sky Background Section with Clouds */
-.sky-background {
-    position: relative;
-    height: 100vh;
-    background: linear-gradient(to bottom, #4A90E2, #E6F0FF);
-    overflow: hidden;
-}
+        .clouds {
+            position: absolute;
+            top: 10%;
+            left: -20%;
+            width: 140%;
+            height: 60%;
+            background: url('https://www.w3schools.com/w3images/clouds.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: moveClouds 30s linear infinite;
+        }
 
-.clouds {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    right: 0;
-    background: url('clouds.png') repeat-x;
-    animation: move-clouds 60s linear infinite;
-}
+        @keyframes moveClouds {
+            0% {
+                left: -20%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
 
-@keyframes move-clouds {
-    0% { left: -100%; }
-    100% { left: 100%; }
-}
+        /* Header Section */
+        header {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent header */
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
 
-/* Header Section */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-}
+        header .logo h1 {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            color: #00b5e2;
+        }
 
-header .logo h1 {
-    font-size: 2rem;
-    margin: 0;
-}
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
 
-header nav ul {
-    display: flex;
-    list-style-type: none;
-}
+        header nav ul li {
+            margin: 0 15px;
+        }
 
-header nav ul li {
-    margin-left: 20px;
-}
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
 
-header nav ul li a {
-    color: white;
-    font-size: 1.2rem;
-    padding: 10px;
-    transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #4A90E2;
-}
+        header nav ul li a:hover {
+            color: #00b5e2;
+        }
 
 /* Hero Section */
 .hero {
